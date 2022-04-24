@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #091833;
+    background: url(../Img/FondoLibe.png)
+  }
+
+h1,h2 {
+    text-align: center;
+    color: 	#ea00d9;
+    padding: 20px;
+}
+h3{
+    color: #FE18D3;
+    text-align: center;
+
+
+}
+h4{
+    color: aqua;
+    text-align: left;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.columna {
+    float: left;
+    width: 33%;
+    padding-right: 5px;
+
+}
+
+.fila::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    width: 100%; 
+    max-height: 100%; 
+    object-fit: contain;
+
+}
