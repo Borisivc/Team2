@@ -211,13 +211,14 @@ body {
     background: #4e4d4d;
 }
 .buttons4 {
-    width: 100%;
+    width: 30%;
     height: 40px;
     background: #017bab;
     border: none;
     text-align: center;
     color: white;
     margin-bottom: 16px;
+    
 }
 .form-Index a:hover{
     text-decoration-style: underline;
