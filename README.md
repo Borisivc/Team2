@@ -1,6 +1,6 @@
 Integrantes: <br>
             Garcia Camila <br>
-            Jara Libera <br>
+            Jara Libena <br>
             Medina Luis <br>
             Villarroel Boris <br>
 
