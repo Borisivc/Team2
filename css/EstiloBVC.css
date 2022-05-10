@@ -5,7 +5,7 @@
 }
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: url('../img/Fondo.jpg');
+    background-image: url('../img/Fondo_web.jpg');
     background-size: 100%;
 }
 .form-login {
@@ -48,7 +48,6 @@ body {
 .form-login p{
     height: 40px;
     text-align: right;
-    border-bottom: 1px solid;
 }
 .form-login img{
     width: 10%;
@@ -219,6 +218,7 @@ body {
     color: white;
     margin-bottom: 8px;
     margin-left: 35%; 
+    
 }
 .form-Index a:hover{
     text-decoration-style: underline;
