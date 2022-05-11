@@ -10,8 +10,8 @@
     box-sizing: border-box;
 }
 body{
-    
     background-image: url(../img/Fondo_web.jpg);
+    background-size: 100%;
     display:flex;
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,25 +22,17 @@ body{
     width:100px;  
 
 }
-
 .dropdown-item{
-
     background-color: black;
 }
-
 .offcanvas-body{
-
     background-image: url(../img/Fondo_web.jpg);
 }
-
-
 .container{
     position:static;
     display: flex;
-    background-image: url(../img/Fondo_web.jpg);
 }
 .container aside{
-    background-image: url(../img/Fondo_web.jpg);
     padding: var(--padding);
 }
 .container aside .menu a{
@@ -50,22 +42,16 @@ body{
     display: flex;
     align-items: center;
 }
-
 .dropdown-menu{
     background-color:black;
-    
-
 }
 .container aside .menu a span{
     margin-right: 8px;
 }
-
 .container aside .menu a:hover{
     color: white;
     transform: scale(1.1);
     }
-
-
 .container section .contenedor_degradado, .container section .contenedor_contenido{
     padding: var(--padding);
 }
@@ -74,14 +60,12 @@ body{
     width: 100%;
     margin-top: 61px;
 }
-
 .container section .contenedor_degradado .banner{
     width: 100%;
     height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/Fondo_web.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -107,7 +91,6 @@ body{
     width: 100%;
     height: 100%;
 }
-
 .container section .contenedor_degradado .banner .cancion figure:hover:after{
     position: absolute;
     content: '';
