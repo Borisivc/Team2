@@ -20,6 +20,7 @@ body{
     color: white;
     height:100px;
     width:100px;  
+
 }
 
 .dropdown-item{
@@ -131,6 +132,5 @@ body{
     width: 100%;
     transform: scale(1.2);
 }
-
 
 
