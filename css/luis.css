@@ -58,6 +58,7 @@ body{
 .container section .contenedor_degradado{
     background: linear-gradient(#505053,#181818);
     width: 100%;
+    height: 95%;
     margin-top: 61px;
 }
 .container section .contenedor_degradado .banner{
