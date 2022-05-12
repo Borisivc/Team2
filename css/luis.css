@@ -16,6 +16,12 @@ body{
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.h1,h2,h3,h4,h5 {
+    color: rgb(53, 52, 52);
+    text-align: center;
+    height: 40px;
+    font-size:  30px;
+}
 .btn {
     color: white;
     height:100px;
@@ -50,7 +56,7 @@ body{
 .container aside .menu a:hover{
     color: white;
     transform: scale(1.1);
-    }
+}
 .container section .contenedor_degradado, .container section .contenedor_contenido{
     padding: var(--padding);
 }
