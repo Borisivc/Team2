@@ -50,3 +50,7 @@
     border-radius: .5rem;
     border: solid .5px var(--texto);
 }
+.logo{
+    font-size: 30px;
+    color: var(--secundario);
+}
