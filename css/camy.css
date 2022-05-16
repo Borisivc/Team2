@@ -44,3 +44,9 @@
 .col-4{
     flex: 1 0 calc(50% - 10px);
 }
+.card{
+    width: 92%;
+    height: 92%;
+    border-radius: .5rem;
+    border: solid .5px var(--texto);
+}
