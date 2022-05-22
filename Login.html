@@ -11,26 +11,32 @@
 </head>
 <body>
     <div class="form-login">
-        <h5>LOGIN</h5>
-        <form action="Menu.html" method="post">
-        <input class="controls" type="text" name="Usuario" placeholder="USUARIO"  id="usuario" value="">
-        <input class="controls" type="password" name="Pass" placeholder="CONTRASEÑA"  id="contraseña" value="">
-        <input class="buttons" type="submit"  value="INGRESAR" id="btnenviar" >
-        </form>
+        <div class = "col-md-6 col-md-offset-3">
+        	<div class = "panel panel-primary">
+            	<div class = "panel-heading">
+                	Registro
+                </div>
+                <div class="panel-body">
+                    <form action="Menu.html" method="post">
+                    <form id = "registro">   
+                    <input type = "text" class = "form-control" name = "username" placeholder = "Usuario"/>
+                    <br/>
+                    <input type = "password" class = "form-control" name = "password" placeholder = "Contraseña" id = "password"/> 
+                    <br/>
+                    <button type = "submit" class = "btn btn-primary">Ingresar</button>      
+                    </form> 
+                    </form>               
+                </div>
+            </div>
+        </div>
+        <br/>             
         <a href="Index.html"><img src="./img/home.svg" alt="Volver"> 
         </a> <p><a href="Recupera_contr.html">¿Olvidaste tu Contraseña?</a></p>
-    </div>
+    </div>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#btnenviar").click(function(){
-                var usuario = $("#usuario").val();
-                var contraseña= $("#contraseña").val();
-                if (usuario == "" || contraseña == ""){alert("Formulario incompleto");
-            }
-            });
-        });
-    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="register.js"></script>
 </body>
 </html>
-}
+
