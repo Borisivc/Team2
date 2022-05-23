@@ -66,7 +66,8 @@ if($registrationForm.length){
             }
         },
         errorPlacement: function(error, element){
-            if(element.is(":checkbox")){
+            if(element.is(":checkbox"))
+            {
                 error.appendTo(element.parents('.musica'));
             }
             else{
