@@ -1,12 +1,9 @@
-jQuery.validator.addMethod("noSpace", function(value, element) { 
-    return value == '' || value.trim().length != 0;  
-}, "No space please and don't leave it empty");
 jQuery.validator.addMethod("customEmail", function(value, element) { 
   return this.optional( element ) || /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test( value ); 
-}, "Please enter valid email address!");
+}, "Ingrese un email valido!");
 $.validator.addMethod( "alphanumeric", function( value, element ) {
 return this.optional( element ) || /^\w+$/i.test( value );
-}, "Letters, numbers, and underscores only please" );
+}, "Solo letras, numeros y guiones bajos estan permitidos" );
 $(function(){
     var $ingreso = $("#ingreso");
     if($ingreso.length){
@@ -35,7 +32,7 @@ $(function(){
 var $registrationForm = $('#registro');
 if($registrationForm.length){
   $registrationForm.validate({
-      rules:{
+    rules:{
           username2: {
               required: true,
               alphanumeric: true
@@ -51,6 +48,23 @@ if($registrationForm.length){
               required: true,
               equalTo: '#password'
           },
-        }
+        },
+    messages:{
+        username: {
+            required: 'Porfavor ingrese usuario'
+        },
+        email: {
+            required: 'Por favor ingrese un email',
+            email: 'Ingrese un email valido!'
+        },
+        password: {
+            required: 'Por favor ingrese contraseña'
+        },
+        confirm: {
+            required: 'Por favor confirme contraseña',
+            equalTo: 'Las contraseñas deben ser iguales'
+        },
+    }      
+        
   });
 }
