@@ -32,7 +32,7 @@ $(function(){
         }) 
     }
 })
-var $registrationForm = $('#registration');
+var $registrationForm = $('#registro');
 if($registrationForm.length){
   $registrationForm.validate({
       rules:{
