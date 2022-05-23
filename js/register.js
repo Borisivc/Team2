@@ -1,3 +1,6 @@
+jQuery.validator.addMethod("noSpace", function(value, element) { 
+    return value == '' || value.trim().length != 0;  
+}, "Debe escoger aunque sea una opcion");
 jQuery.validator.addMethod("customEmail", function(value, element) { 
     return this.optional( element ) || /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test( value ); 
 }, "Ingrese un email valido!");
@@ -61,8 +64,16 @@ if($registrationForm.length){
                 required: 'Por favor confirme contraseña',
                 equalto: 'Las contraseñas deben ser iguales'
             }
-        }    
-
+        },
+        errorPlacement: function(error, element){
+            if(element.is(":checkbox")){
+                error.appendTo(element.parents('.musica'));
+            }
+            else{
+                error.insertAfter(element);
+            }
+        } 
+       
     })
 }
 var $registroContra = $('#recuperacontrase');
