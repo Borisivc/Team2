@@ -18,7 +18,7 @@ if($ingreso.length){
         },
         messages: {
             username: {
-                requirid:'Por favor ingrese usuario'
+                required:'Por favor ingrese usuario'
             },
             password: {
                 required:'Por favor ingrese contraseña'
