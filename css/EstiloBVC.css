@@ -144,5 +144,8 @@ h1,h2,h3,h4,h5 {
 
 h4 {
     text-align: center;
-    color: white;
+    color: #252323;
+}
+.modal-content{
+    background-color: #252323;
 }
