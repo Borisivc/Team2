@@ -107,4 +107,32 @@ if($registroContra.length){
         }
     })
 }
-
+var $encuesta = $('#encuesta');
+if($encuesta.length){
+    $encuesta.validate({
+        rules: {
+            nombre:{
+                required: true,
+                alphanumeric: true
+            },
+            apellido: {
+                required: true,
+                alphanumeric: true
+            },
+            razon: {
+                required: true
+            }
+        },
+        messages: {
+            nombre: {
+                required: 'Por favor ingrese su nombre'
+            },
+            apellido: {
+                required: 'Por favor ingrese su apellido'
+            },
+            razon: {
+                required: 'Por favor ingrese una razon'
+            }
+        }
+    })
+}
