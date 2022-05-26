@@ -5,7 +5,7 @@
 }
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: url('../img/fondonegro.jpg');
+    background-image: url('../img/Fondo_web.jpg');
     background-size: 100%;
 }
 .controls {
@@ -43,6 +43,7 @@ h1,h2,h3,h4,h5 {
     height: 40px;
     margin-bottom: 30px;
     font-size:  20px;
+    color: #252323;
 }
 .p{
     height: 40px;
@@ -136,14 +137,8 @@ h1,h2,h3,h4,h5 {
     color: white;
 }
 .modal-content {
-    background: #252323;
-}
-
-
-h4 {
-    text-align: center;
-    color: #252323;
+    background: #4e4d4d;
 }
 .modal-content{
-    background-color: #252323;
+    background-color: #4e4d4d;
 }
