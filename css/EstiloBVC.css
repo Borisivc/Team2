@@ -109,6 +109,18 @@ h1,h2,h3,h4,h5 {
     color: white;
 }
 /*---------------*/
+.form-registro_msj {
+    width: 400px;
+    height: 420px;
+    background: #4e4d4d;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+}
+/*---------------*/
 .form-kpop p{
     height: 50px;
     text-align: left;
