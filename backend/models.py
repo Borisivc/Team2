@@ -24,3 +24,10 @@ class Artista(models.Model):
 
     def str(self):
         return self.nombre_artistico
+    
+    class Album(models.Model):
+        nombre_album = models.CharField(max_length=100)
+        
+        def str(self):
+            return self.nombre_album
+        
