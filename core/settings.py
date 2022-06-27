@@ -25,17 +25,11 @@ SECRET_KEY = 'django-insecure-z1xw8b2d7rxs9wi9(9krm5m=-n!n1=g(y&ek52@xnw755z^p90
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '*'
-]
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
-third_party_apps=[
-    'rest_framework',
-]
-django_apps=[
+DJANGO_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,17 +37,24 @@ django_apps=[
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
-customers_app=[
+
+CUSTUMER_APPS = [
     'backend',
-    'api',
+    'api'
 ]
 
-INSTALLED_APPS = third_party_apps + django_apps + customers_app;
+THIRD_PARTY_APPS = [
+    'corsheaders',
+    'rest_framework'
+]
+
+INSTALLED_APPS = DJANGO_APPS + CUSTUMER_APPS + THIRD_PARTY_APPS 
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.corsmiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -121,7 +122,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es-cl'
 
-TIME_ZONE = 'america-santiago'
+TIME_ZONE = 'America-Santiago'
 
 USE_I18N = True
 

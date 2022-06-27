@@ -1,7 +1,6 @@
 from django.db import models
 
 # Create your models here.
-
 class Genero(models.Model):
     nombre = models.CharField(max_length=100)
     
@@ -12,7 +11,7 @@ class Genero(models.Model):
 class Cancion(models.Model):
     nombre = models.CharField(max_length=100)
     genero = models.ForeignKey(Genero, on_delete = models.DO_NOTHING)
-    artista = models.ForeignKey()
+    artista = models.CharField(max_length=100)
     duracion = models.IntegerField()
     
     def __str__(self):
@@ -25,9 +24,8 @@ class Artista(models.Model):
     def __str__(self):
         return self.nombre_artistico
     
-    class Album(models.Model):
-        nombre_album = models.CharField(max_length=100)
+class Album(models.Model):
+    nombre_album = models.CharField(max_length=100)
         
-        def __str__(self):
-            return self.nombre_album
-        
+    def __str__(self):
+        return self.nombre_album
