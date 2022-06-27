@@ -29,10 +29,6 @@ ALLOWED_HOSTS = ['*']
 
 
 # Application definition
-THIRD_PARTY_APPS = [
-    'rest_framework',
-    'corsheaders'
-]
 
 DJANGO_APPS = [
     'django.contrib.admin',
@@ -47,7 +43,11 @@ CUSTUMER_APPS = [
     'api'
 ]
 
-INSTALLED_APPS = THIRD_PARTY_APPS + DJANGO_APPS + CUSTUMER_APPS 
+THIRD_PARTY_APPS = [
+    'corsheaders'
+]
+
+INSTALLED_APPS = DJANGO_APPS + CUSTUMER_APPS + THIRD_PARTY_APPS 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
