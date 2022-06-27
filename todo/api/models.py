@@ -1,4 +1,4 @@
 from backend.models import Genero,Cancion,Artista,Album
-from rest_framework import serializers
+from rest_
 
 # Create your models here.
