@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reproductor2.css">
+    <title>Reproductor</title>
+</head>
+
+<body>
+    
+    <div class="player">
+        <div id="info" class="info">
+            <span class="artist">Jungkook</span>
+            <span class="name">Euphoria</span>
+            <div class="progress-bar">
+                <div class="bar"></div>
+            </div>
+        </div>   
+
+        <div id="control-panel" class="control-panel">
+            <div class="album-art">
+                <img src="img/JKBEBE.jpg" alt="">
+            </div>
+            <div class="controls">
+                <div class="prev"></div>
+                <div class="play" id="play"></div>
+                <div class="next"></div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="Music" controls style="display: none;">
+        <source  src="Music/jkbebe.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="Music" controls style="display: none;">
+        <source  src="Music/lovemaybe.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+
+<script src="js/reproductor.js"></script>
+
+</html>
