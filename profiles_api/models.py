@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin
 from django.contrib.auth.models import BaseUserManager
 
-# Creando los modelos para los usuarios, iniciando con email
+# Creando los modelos para los usuarios, iniciando con email vamos
 class UserProfileManager(BaseUserManager):
     def create_user(self, email, name, password=None):
         """Crear nuevo usur profile"""
@@ -19,6 +19,7 @@ class UserProfileManager(BaseUserManager):
         return user
     
     def create_superuser(self, email, name, password):
+        """Crear nuevo superusur """
         user = self.create_user(email, name, password)
         
         user.is_superuser = True

@@ -37,10 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog.apps.BlogConfig',
     'rest_framework',
     'rest_framework.authtoken',
     'profiles_api',
+    'blog.apps.BlogConfig',
     
 ]
 
@@ -124,6 +124,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = (BASE_DIR, 'static')
+
+AUTH_USER_MODEL = 'profiles_api.Userprofile'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
