@@ -5,8 +5,9 @@
 }
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: url('../img/Fondo_web.jpg');
+    background-image: url('../img/Fondo_web4.png');
     background-size: 100%;
+    background-size: cover;
 }
 .controls {
     width: 100%;
@@ -37,12 +38,18 @@ body {
     margin-bottom: 8px;
     margin-left: 35%; 
 }
-h1,h2,h3,h4,h5 {
+h1,h2,h3,h4 {
     margin: 0;
     text-align: center;
     height: 40px;
     margin-bottom: 30px;
     font-size:  20px;
+    color: #252323;
+}
+h5 {
+    color: whitesmoke;
+    margin: 0;
+    font-size:  40px;
 }
 .p{
     height: 40px;
@@ -126,7 +133,7 @@ h1,h2,h3,h4,h5 {
 /*---------------*/
 .form-encuesta {
     width: 500px;
-    height: 550px;
+    height: 570px;
     background: #4e4d4d;
     margin: auto;
     margin-top: 100px;
@@ -134,4 +141,10 @@ h1,h2,h3,h4,h5 {
     padding: 20px 30px;
     border-top: 4px solid #017bab;
     color: white;
+}
+.modal-content {
+    background: #4e4d4d;
+}
+.modal-content{
+    background-color: #4e4d4d;
 }
