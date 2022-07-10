@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(../img/Fondo_web.jpg);
+    background-image: url(../img/Fondo_web2.jpg);
     background-size: 100%;
     display: flex;
 
@@ -29,7 +29,7 @@ h3 {
 }
 
 .offcanvas-body {
-    background-image: url(../img/fondonegro.jpg);
+    background-image: url(../img/Fondo_web2.jpg);
 }
 
 .container {
